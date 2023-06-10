@@ -3,22 +3,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropzone = document.getElementById('dropzone');
     const resetBtn = document.getElementById('resetBtn');
     
-    // Add event listeners to draggable items
     items.forEach(function(item) {
       item.addEventListener('dragstart', dragStart);
       item.addEventListener('dragend', dragEnd);
     });
     
-    // Add event listeners to dropzone
     dropzone.addEventListener('dragover', dragOver);
     dropzone.addEventListener('dragenter', dragEnter);
     dropzone.addEventListener('dragleave', dragLeave);
     dropzone.addEventListener('drop', dragDrop);
     
-    // Reset button event listener
+    
     resetBtn.addEventListener('click', resetContainers);
     
-    // Drag functions
+   
     function dragStart() {
       this.classList.add('dragging');
     }
@@ -47,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
       showMessage('Item dropped!');
     }
     
-    // Reset containers function
+   
     function resetContainers() {
       dropzone.innerHTML = '';
       items.forEach(function(item) {
@@ -55,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
     
-    // Show message function
+   
     function showMessage(message) {
       const messageDiv = document.createElement('div');
       messageDiv.classList.add('message');

@@ -1,0 +1,28 @@
+.container {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+  }
+  
+  .item {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    cursor: grab;
+  }
+  
+  .dropzone {
+    min-height: 100px;
+    background-color: #f2f2f2;
+    border: 1px dashed #999;
+    margin-bottom: 5px;
+  }
+  
+  .reset-btn {
+    margin-top: 10px;
+  }
+  
